@@ -481,81 +481,16 @@
             engineer triage, and developer feedback.
           </p>
         </div>
-        <div class="meta">
-          <strong>Research snapshot</strong>
-          Compiled: May 17, 2026<br>
-          Format: static HTML<br>
-          Evidence: local proposal/plan, source repos, public sites, papers, LinkedIn claims
-        </div>
       </div>
       <nav aria-label="Page sections">
-        <a href="#grid-agents-lens">Grid Agents Lens</a>
         <a href="#case-studies">Case Studies</a>
         <a href="#comparison">Comparison</a>
-        <a href="#better-product">Better Product Criteria</a>
         <a href="#sources">Sources</a>
       </nav>
     </div>
   </header>
 
   <main class="wrap">
-    <section id="grid-agents-lens" class="panel">
-      <div class="two-col">
-        <div>
-          <h2>Grid Agents Baseline</h2>
-          <p>
-            The local proposal and project plan define Grid Agents as an AI review engine for medium and large-scale
-            generation, storage, and demand connection applications. It is not positioned as a solver, simulator,
-            or installer portal. Its core job is to ingest multi-document application packages and turn messy evidence
-            into traceable review findings that engineers can trust.
-          </p>
-          <p>
-            The planned technical method combines document processing, computer vision for single-line diagrams,
-            a regulatory knowledge base over Grid Code and Distribution Code material, historical precedent retrieval,
-            compliance checking, confidence scoring, engineer review, and applicant-facing feedback.
-          </p>
-        </div>
-        <div>
-          <h3>Product Scope From Local Materials</h3>
-          <ul>
-            <li>Input: forms, PDFs, single-line diagrams, studies, drawings, financial documents, planning permissions, and land rights evidence.</li>
-            <li>Checks: completeness, compliance, consistency, and prioritization against readiness/alignment criteria.</li>
-            <li>Human control: engineers retain final decisions; edge cases are escalated with evidence and confidence scores.</li>
-            <li>Target pilot metrics: time-to-first-feedback below 5 business days, review effort under 30 minutes, and at least 85% agreement with engineer ground truth.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="flow" aria-label="Grid Agents reference architecture">
-        <div class="flow-row">
-          <div class="node primary">Application package intake</div>
-          <div class="node">Evidence extraction from forms, PDFs, tables, diagrams</div>
-          <div class="node">Regulatory and precedent retrieval</div>
-          <div class="node">Completeness, compliance, consistency checks</div>
-          <div class="node primary">Engineer triage and developer feedback</div>
-        </div>
-      </div>
-
-      <div class="insight-grid">
-        <div class="insight">
-          <b>Key Finding 1</b>
-          Public AI-grid projects cluster around simulation, operations, benchmarking, and workflow automation.
-        </div>
-        <div class="insight">
-          <b>Key Finding 2</b>
-          The closest overlap is large-load grid impact evaluation, but it assumes clean network-model inputs.
-        </div>
-        <div class="insight">
-          <b>Key Finding 3</b>
-          I found no public source in the supplied set that automates end-to-end connection application package review.
-        </div>
-        <div class="insight">
-          <b>Key Finding 4</b>
-          Grid Agents is differentiated by document evidence, compliance traceability, applicant feedback, and queue workflow.
-        </div>
-      </div>
-    </section>
-
     <section id="case-studies">
       <div class="panel">
         <h2>Case Studies</h2>
@@ -707,14 +642,6 @@
                     <li>Input extraction in the public code is simple text parsing, not robust document understanding.</li>
                   </ul>
                 </div>
-                <div>
-                  <h4>Grid Agents Comparison</h4>
-                  <ul>
-                    <li>PowerWorkflow studies the grid impact of a proposed connection.</li>
-                    <li>Grid Agents studies the submission package: whether the application evidence is complete, consistent, compliant, and ready to enter engineering review.</li>
-                    <li>The two are complementary: PowerWorkflow begins after a clean study case exists; Grid Agents handles the messy intake layer that often blocks that state.</li>
-                  </ul>
-                </div>
               </div>
               <p class="source-inline">
                 Source:
@@ -767,14 +694,6 @@
                   <ul>
                     <li>The Dataverse API returns title "OpenPowerBench", publication date May 12, 2025, version 4.1 released May 16, 2025, and CC0 1.0 licensing.</li>
                     <li>The GitHub repo includes dataset structure diagrams, training scripts, configuration files, and sample metrics logs.</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4>Grid Agents Comparison</h4>
-                  <ul>
-                    <li>OpenPowerBench is a model benchmark for grid physics, time series, and operations tasks.</li>
-                    <li>Grid Agents needs a different benchmark class: application package review, rule-grounded citations, diagram evidence extraction, precedent retrieval, and human-review agreement.</li>
-                    <li>OpenPowerBench can inspire evaluation discipline, but it does not supply connection-application labels or document corpora.</li>
                   </ul>
                 </div>
               </div>
@@ -846,14 +765,6 @@
                     <li>It automates studies, not submission-package completeness or applicant correspondence.</li>
                   </ul>
                 </div>
-                <div>
-                  <h4>Grid Agents Comparison</h4>
-                  <ul>
-                    <li>Andrea's system starts from an engineering model and a fault scenario.</li>
-                    <li>Grid Agents starts from an applicant evidence bundle and asks whether the bundle supports review at all.</li>
-                    <li>The repository is strong evidence for a pattern Grid Agents should reuse: deterministic calculations and extraction first, LLM explanation second.</li>
-                  </ul>
-                </div>
               </div>
               <p class="source-inline">
                 Sources:
@@ -908,14 +819,6 @@
                     <li>Evidence quality is low relative to the GitHub repositories and papers.</li>
                     <li>The post does not show how the agent prevents invalid model edits or unsupported compliance conclusions.</li>
                     <li>It is not evidence of interconnection package review, applicant feedback workflow, or queue processing.</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4>Grid Agents Comparison</h4>
-                  <ul>
-                    <li>The post overlaps only at "AI checks grid-code compliance".</li>
-                    <li>Grid Agents' stronger position is evidence-grounded review: cite the application document, cite the rule, identify the gap, and produce auditable feedback.</li>
-                    <li>Any comparison should treat this source as market signal, not a validated competitor.</li>
                   </ul>
                 </div>
               </div>
@@ -974,14 +877,6 @@
                     <li>Some experiments use simplified DC-flow approximations for tractability.</li>
                   </ul>
                 </div>
-                <div>
-                  <h4>Grid Agents Comparison</h4>
-                  <ul>
-                    <li>enliteAI optimizes grid actions after a network state/model exists.</li>
-                    <li>Grid Agents optimizes the application review workflow before projects can be reliably studied and accepted.</li>
-                    <li>The product centers are different: enliteAI is simulation/control/RL-heavy; Grid Agents is document/compliance/workflow-heavy.</li>
-                  </ul>
-                </div>
               </div>
               <p class="source-inline">
                 Sources:
@@ -1004,7 +899,6 @@
           <thead>
             <tr>
               <th>Dimension</th>
-              <th>Grid Agents</th>
               <th>PowerAgent / PowerMCP / PowerWF</th>
               <th>OpenPowerBench / PowerFM</th>
               <th>Andrea DSA / Fysna Prototype</th>
@@ -1014,7 +908,6 @@
           <tbody>
             <tr>
               <td>Primary artifact</td>
-              <td>Connection application package and supporting documents</td>
               <td>Grid model files, solver APIs, tool calls, workflow state</td>
               <td>Benchmark datasets, time series, standard grid cases</td>
               <td>PowerFactory project, study case, fault scenario, simulation CSV</td>
@@ -1022,7 +915,6 @@
             </tr>
             <tr>
               <td>Core technical engine</td>
-              <td>Document AI, vision extraction, regulatory RAG, precedent retrieval, rule checks, confidence scoring</td>
               <td>MCP adapters and agent workflows around existing power-system software</td>
               <td>Dataset pipelines and baseline model evaluation</td>
               <td>PowerFactory API plus LLM reporting/review agents</td>
@@ -1030,7 +922,6 @@
             </tr>
             <tr>
               <td>User</td>
-              <td>Interconnection review teams, utility engineers, applicant-facing operations</td>
               <td>Power-system engineers and researchers automating studies</td>
               <td>Researchers building or evaluating power-system models</td>
               <td>Power-system engineers running dynamic studies</td>
@@ -1038,7 +929,6 @@
             </tr>
             <tr>
               <td>Main output</td>
-              <td>Missing evidence list, compliance issues, contradictions, review summary, developer feedback</td>
               <td>Study results, tool outputs, generated reports, mitigation playbooks</td>
               <td>Model metrics, benchmark datasets, reproducible baselines</td>
               <td>KPI reports, plots, Word/PPT reports, mitigation recommendations</td>
@@ -1046,7 +936,6 @@
             </tr>
             <tr>
               <td>Validation target</td>
-              <td>Engineer agreement, rule citation accuracy, evidence extraction quality, review time reduction</td>
               <td>Solver correctness, workflow reliability, quality of generated interpretations</td>
               <td>Forecasting and grid-task metrics such as NRMSE, R-squared, feasibility/violation scores</td>
               <td>PowerFactory simulation validity and KPI/report consistency</td>
@@ -1054,7 +943,6 @@
             </tr>
             <tr>
               <td>Direct substitute?</td>
-              <td>Reference product</td>
               <td>No. Adjacent infrastructure and workflows.</td>
               <td>No. Data/model benchmark layer.</td>
               <td>No. Engineering study automation.</td>
@@ -1065,57 +953,9 @@
       </div>
     </section>
 
-    <section id="better-product" class="panel">
-      <h2>What Better Looks Like for Grid Agents</h2>
-      <p>
-        The supplied resources show strong adjacent progress in agentic simulation, benchmark datasets, and
-        operational optimization. A stronger Grid Agents product is not a general-purpose grid simulator agent.
-        It is a high-trust review system for evidence packages.
-      </p>
-      <div class="lens-grid">
-        <div class="lens">
-          <b>Evidence Object Model</b>
-          Every finding links to an application artifact, page/table/diagram region, extracted value, normalized field, and confidence score.
-        </div>
-        <div class="lens">
-          <b>Rule-Grounded Compliance</b>
-          Compliance output must cite the rule source and separate hard violations, missing evidence, ambiguous evidence, and engineer-only decisions.
-        </div>
-        <div class="lens">
-          <b>Cross-Document Consistency</b>
-          The product needs entity resolution across forms, diagrams, studies, land/planning evidence, and financial documents.
-        </div>
-        <div class="lens">
-          <b>Diagram Understanding</b>
-          Single-line diagrams should become structured components: buses, transformers, protection, metering, connection point, capacity, voltage level, and contradictions.
-        </div>
-        <div class="lens">
-          <b>Precedent Retrieval</b>
-          Retrieval should return similar historic applications and decisions, but the output must distinguish precedent from binding rule.
-        </div>
-        <div class="lens">
-          <b>Human Review Surface</b>
-          Engineers need triage, source drill-down, accept/reject controls, escalation reasons, and audit history instead of a black-box answer.
-        </div>
-        <div class="lens">
-          <b>Developer Feedback</b>
-          Applicant-facing feedback should be plain language, issue-specific, and backed by evidence without silently changing the submission.
-        </div>
-        <div class="lens">
-          <b>Evaluation Discipline</b>
-          Use held-out labeled applications, inter-annotator agreement, precision/recall/F1, rule citation accuracy, and time-to-first-feedback comparisons.
-        </div>
-      </div>
-      <div class="note">
-        The technical bar: deterministic extraction and validation where possible, LLMs for interpretation and communication where useful, and clear separation between advisory findings and engineer decisions.
-      </div>
-    </section>
-
     <section id="sources" class="panel">
       <h2>Sources Reviewed</h2>
       <ul class="sources">
-        <li>Local: <a href="../proposals/Grid%20Agents%20-%20Proposal.pdf">Grid Agents - Proposal.pdf</a></li>
-        <li>Local: <a href="../proposals/Grid_Agents_NIA_Project_Plan_v2.docx.pdf">Grid_Agents_NIA_Project_Plan_v2.docx.pdf</a></li>
         <li><a href="https://poweragent.seas.harvard.edu" target="_blank" rel="noreferrer">PowerAgent Harvard SEAS site</a></li>
         <li><a href="https://github.com/Power-Agent" target="_blank" rel="noreferrer">Power-Agent GitHub organization</a></li>
         <li><a href="https://github.com/Power-Agent/PowerMCP" target="_blank" rel="noreferrer">Power-Agent/PowerMCP</a></li>
